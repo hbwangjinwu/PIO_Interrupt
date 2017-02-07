@@ -8,7 +8,7 @@ The other way is writting a custom driver by accessing the registers and getting
 This example using the second one.
 
 # Compile the Quartus project
-Open the ghrd project and compile the 
+Open the ghrd project and compile the project to generate the soc_system.sof
 
 # Linux distribution
 Git clone the SoCFPGA linux source and compile the kernel. Copy the zImage file  to the fat partion in your boot SD card.
@@ -18,12 +18,12 @@ Git clone the SoCFPGA linux source and compile the kernel. Copy the zImage file 
 ## generate the dts file
 The PIO button information must be added to the device tree. In the SoCEDS command shell, typing the following command and get the dtb file
 
-*sopc2dts --input soc_system.sopcinfo\
-  --output socfpga.dts\
-  --type dts\
-  --board soc_system_board_info.xml\
-  --board hps_common_board_info.xml\
-  --bridge-removal all\
+*sopc2dts --input soc_system.sopcinfo
+  --output socfpga.dts
+  --type dts
+  --board soc_system_board_info.xml
+  --board hps_common_board_info.xml
+  --bridge-removal all
   --clocks*
 
 ## change the dts 
