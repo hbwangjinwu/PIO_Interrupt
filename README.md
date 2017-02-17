@@ -33,7 +33,7 @@ compatible = "altr,pio-16.0", "altr,pio-1.0",**"terasic,pio-button";**
 
 ![mark](http://ogtvbbrfk.bkt.clouddn.com/blog/20170207/153604729.png)
 
-*for the users who use the kernel version newer than 4.3, you should change this line as compatible = **"terasic,pio-button";**. otherwise the driver will not work*
+*for the users who use the kernel version newer than 4.3, you should change this line as compatible = "terasic,pio-button";. otherwise the driver will not work*
 
 ## generate the dtb file
 
